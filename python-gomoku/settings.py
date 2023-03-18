@@ -52,7 +52,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
     'game.apps.GameConfig',
+    'channels',
+
+
 ]
 
 MIDDLEWARE = [
@@ -85,7 +89,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'python-gomoku.wsgi.application'
-
+ASGI_APPLICATION = 'python-gomoku.asgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
